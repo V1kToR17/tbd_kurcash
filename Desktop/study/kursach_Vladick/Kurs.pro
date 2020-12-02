@@ -3,7 +3,7 @@ QT       += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
+CONFIG += c++17
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -17,20 +17,40 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    deaths_by_reg.cpp \
-    deaths_by_year.cpp \
+    autorization.cpp \
+    bank.cpp \
+    dialog1.cpp \
+    dialog2.cpp \
+    dialog3.cpp \
+    dialog4.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    material.cpp \
+    provider.cpp
 
 HEADERS += \
-    deaths_by_reg.h \
-    deaths_by_year.h \
-    mainwindow.h
+    ../../../Documents/tbd_kursach/deaths_by_year.h \
+    autorization.h \
+    bank.h \
+    dialog1.h \
+    dialog2.h \
+    dialog3.h \
+    dialog4.h \
+    global.h \
+    mainwindow.h \
+    material.h \
+    provider.h
 
 FORMS += \
-    deaths_by_reg.ui \
-    deaths_by_year.ui \
-    mainwindow.ui
+    autorization.ui \
+    bank.ui \
+    dialog1.ui \
+    dialog2.ui \
+    dialog3.ui \
+    dialog4.ui \
+    mainwindow.ui \
+    material.ui \
+    provider.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

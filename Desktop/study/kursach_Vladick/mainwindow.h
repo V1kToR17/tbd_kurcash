@@ -2,8 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "deaths_by_year.h"
-#include "deaths_by_reg.h"
+#include "dialog1.h"
+#include "dialog2.h"
+#include "dialog3.h"
+#include "dialog4.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,9 +24,16 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+    void pushButton_2_enabled();
+
 private:
     Ui::MainWindow *ui;
-    deaths_by_year *deaths_year;
-    deaths_by_reg *deaths_reg;
+    Dialog1 *window1;
+    Dialog2 *window2;
+    Dialog3 *window3;
+    Dialog4 *window4;
 };
 #endif // MAINWINDOW_H
